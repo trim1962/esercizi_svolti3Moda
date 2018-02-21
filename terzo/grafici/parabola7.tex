@@ -1,0 +1,27 @@
+\documentclass{standalone}
+\usepackage{pgf,tikz}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\begin{document}
+	
+	\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+	\draw[->,color=black] (-4.04,0.) -- (4.86,0.);
+	\foreach \x in {-4.,-3.,-2.,-1.,1.,2.,3.,4.}
+	\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
+	\draw[->,color=black] (0.,-1.08) -- (0.,7.7);
+	\foreach \y in {-1.,1.,2.,3.,4.,5.,6.,7.}
+	\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
+	\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$};
+	\clip(-4.04,-1.08) rectangle (4.86,7.7);
+	\draw [samples=50,rotate around={0.:(1.,2.3333333333333335)},xshift=1.cm,yshift=2.3333333333333335cm,domain=-4.5:4.5)] plot (\x,{(\x)^2/2/0.75});
+	\begin{scriptsize}
+	\draw [fill=black] (3.,5.) circle (2.5pt);
+	\draw[color=black] (3.36,5.) node {$A$};
+	\draw [fill=black] (2.,3.) circle (2.5pt);
+	\draw[color=black] (2.38,2.96) node {$B$};
+	\draw [fill=black] (-1.,5.) circle (2.5pt);
+	\draw[color=black] (-1.4,5.04) node {$C$};
+	\end{scriptsize}
+	\end{tikzpicture}
+\end{document}

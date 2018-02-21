@@ -1,0 +1,31 @@
+\documentclass{standalone}
+\usepackage{pgf,tikz}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\begin{document}
+	\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+	\draw[->,color=black] (-1.8244116320959396,0.) -- (6.290559253515008,0.);
+	\foreach \x in {-1.,1.,2.,3.,4.,5.,6.}
+	\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
+	\draw[->,color=black] (0.,-3.567468527161744) -- (0.,4.955192283324396);
+	\foreach \y in {-3.,-2.,-1.,1.,2.,3.,4.}
+	\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
+	\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$};
+	\clip(-1.8244116320959396,-3.567468527161744) rectangle (6.290559253515008,4.955192283324396);
+	\draw [samples=50,rotate around={0.:(2.25,-2.25)},xshift=2.25cm,yshift=-2.25cm,domain=-2.0:2.0)] plot (\x,{(\x)^2/2/0.125});
+	\draw [dash pattern=on 5pt off 5pt] (2.25,-3.567468527161744) -- (2.25,4.955192283324396);
+	\begin{scriptsize}
+	\draw [fill=black] (2.25,-2.25) circle (2.5pt);
+	\draw[color=black] (2.504867093959662,-2.577364423893423) node {$V$};
+	\draw [fill=black] (1.,4.) circle (2.5pt);
+	\draw[color=black] (0.5634864993158942,4.372778104931267) node {$A$};
+	\draw [fill=black] (3.5,4.) circle (2.5pt);
+	\draw[color=black] (3.9220749280496117,4.353364298984829) node {$A'$};
+	\draw [fill=black] (2.,-2.) circle (2.5pt);
+	\draw[color=black] (1.4759353787984648,-1.6260879325179762) node {$B$};
+	\draw [fill=black] (2.5,-2.) circle (2.5pt);
+	\draw[color=black] (2.951384630727728,-1.645501738464414) node {$B'$};
+	\end{scriptsize}
+	\end{tikzpicture}
+\end{document}

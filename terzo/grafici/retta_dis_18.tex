@@ -1,0 +1,24 @@
+\documentclass{standalone}
+\usepackage{pgf,tikz}
+%\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\begin{document}
+
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\draw[->,color=black] (-4.56061535430303,0.) -- (3.2932785060047127,0.);
+\foreach \x in {-4.,-3.,-2.,-1.,1.,2.,3.}
+\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
+\draw[->,color=black] (0.,-2.3580072075453877) -- (0.,3.69834052276235);
+\foreach \y in {-2.,-1.,1.,2.,3.}
+\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
+\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$};
+\clip(-4.56061535430303,-2.3580072075453877) rectangle (3.2932785060047127,3.69834052276235);
+\draw [domain=-4.56061535430303:3.2932785060047127] plot(\x,{(--3.--3.*\x)/1.});
+\draw [domain=-4.56061535430303:3.2932785060047127] plot(\x,{(-2.-2.*\x)/1.});
+\begin{scriptsize}
+\draw [fill=black] (-1.,0.) circle (1.5pt);
+\draw[color=black] (-1.255895930687624,0.08942098483924588) node {$A$};
+\end{scriptsize}
+\end{tikzpicture}
+\end{document}

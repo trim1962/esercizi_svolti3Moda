@@ -1,0 +1,29 @@
+\documentclass{standalone}
+\usepackage{pgf,tikz}
+%\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\begin{document}
+
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\draw[->,color=black] (-5.08,0.) -- (7.416,0.);
+\foreach \x in {-4.,-2.,2.,4.,6.}
+\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
+\draw[->,color=black] (0.,-5.56) -- (0.,4.076);
+\foreach \y in {-4.,-2.,2.,4.}
+\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
+\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$};
+\clip(-5.08,-5.56) rectangle (7.416,4.076);
+\draw (-3.,2.)-- (3.,2.);
+\draw (3.,2.)-- (0.,-3.);
+\draw (-3.,2.)-- (0.,-3.);
+\begin{scriptsize}
+\draw [fill=black] (-3.,2.) circle (2.5pt);
+\draw[color=black] (-2.836,2.404) node {$A$};
+\draw [fill=black] (3.,2.) circle (2.5pt);
+\draw[color=black] (3.148,2.404) node {$B$};
+\draw [fill=black] (0.,-3.) circle (2.5pt);
+\draw[color=black] (0.156,-2.612) node {$C$};
+\end{scriptsize}
+\end{tikzpicture}
+\end{document}

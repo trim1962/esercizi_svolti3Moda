@@ -1,0 +1,27 @@
+\documentclass{standalone}
+\usepackage{amsmath}
+\usepackage{pgf,tikz}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\begin{document}
+
+	\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+	\draw[->,color=black] (-7.244292682926832,0.) -- (7.507082926829273,0.);
+	\foreach \x in {-6.,-4.,-2.,2.,4.,6.}
+	\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
+	\draw[->,color=black] (0.,-2.3826731707317057) -- (0.,9.018478048780478);
+	\foreach \y in {-2.,2.,4.,6.,8.}
+	\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
+	\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$};
+	\clip(-7.244292682926832,-2.3826731707317057) rectangle (7.507082926829273,9.018478048780478);
+	\draw [samples=50,rotate around={0.:(0.,0.)},xshift=0.cm,yshift=0.cm,domain=-12.0:12.0)] plot (\x,{(\x)^2/2/2.0});
+	\draw [domain=-7.244292682926832:7.507082926829273] plot(\x,{(-1.-0.*\x)/1.});
+	\begin{scriptsize}
+	\draw [fill=black] (0.,1.) circle (1.5pt);
+	\draw[color=black] (0.18333658536585473,1.4609951219512185) node {$F$};
+	\draw [fill=black] (0.,0.) circle (1.5pt);
+	\draw[color=black] (0.18333658536585473,0.37022439024390275) node {$V$};
+	\end{scriptsize}
+	\end{tikzpicture}
+\end{document}

@@ -1,0 +1,36 @@
+\documentclass{standalone}
+\usepackage{pgf,tikz}
+%\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\begin{document}
+
+\documentclass[10pt]{article}
+\usepackage{pgf,tikz}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\begin{document}
+
+	\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+	\draw[->,color=black] (-42.6128762595607,0.) -- (45.94052852304408,0.);
+	\foreach \x in {-40.,-30.,-20.,-10.,10.,20.,30.,40.}
+	\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
+	\draw[->,color=black] (0.,-49.54675652198652) -- (0.,18.739143644881477);
+	\foreach \y in {-40.,-30.,-20.,-10.,10.}
+	\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
+	\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$};
+	\clip(-42.6128762595607,-49.54675652198652) rectangle (45.94052852304408,18.739143644881477);
+	\draw [domain=-42.6128762595607:45.94052852304408] plot(\x,{(-76.-4.*\x)/2.});
+	\begin{scriptsize}
+	\draw [fill=black] (-13.,-12.) circle (2.5pt);
+	\draw[color=black] (-11.899811572636155,-9.167651172171881) node {$A$};
+	\draw [fill=black] (-15.,-8.) circle (2.5pt);
+	\draw[color=black] (-13.926562034209857,-5.270054130683983) node {$B$};
+	\draw [fill=black] (-19.,0.) circle (2.5pt);
+	\draw[color=black] (-17.98006295735726,2.213332188972784) node {$C$};
+	\draw [fill=black] (0.,-38.) circle (2.5pt);
+	\draw[color=black] (1.040210605103628,-35.827214935949115) node {$D$};
+	\end{scriptsize}
+	\end{tikzpicture}
+\end{document}

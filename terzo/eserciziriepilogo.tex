@@ -1,0 +1,358 @@
+%\begin{exercise}
+%	Calcola il perimetro della che ha per vertici $A\coord{-3}{1}$, $B\coord{-1}{4}$, $C\coord{-6}{4}$ e  $D\coord{-8}{1}$
+%	\tcblower
+%	
+%\end{exercise}
+\chapter{Esercizi di riepilogo geometria analitica}
+\section{Perimetro figure}
+\tcbstartrecording
+\begin{exercise}
+Calcola il perimetro del triangolo che ha per vertici $A\coord{-3}{2}$, $B\coord{3}{2}$ e $C\coord{0}{-3}$
+\tcblower
+Calcolo la distanza tra $AB$ come con l'\cref{exa:disuno} 
+quindi \[d(AB)=\abs{-3-3}=\abs{-6}=6\] Ora calcoliamo la distanza tra $BC$ come con \cref{exa:discinque} 
+\begin{align*}
+d(BC)=&\sqrt{(3)^2+(2+3)^2}\\
+=&\sqrt{34}
+\end{align*}
+Ora calcoliamo la distanza tra $AC$ come con \cref{exa:discinque} 
+\begin{align*}
+d(AC)=&\sqrt{(-3)^2+(2+3)^2}\\
+=&\sqrt{34}
+\end{align*}
+Conseguentemente il perimetro è
+\[2P=6+\sqrt{34}+\sqrt{34}=6+2\sqrt{34}\]
+\begin{center}
+	\includestandalone[width=.5\textwidth]{terzo/grafici/retta_dis_11}
+	\captionof{figure}{Perimetro triangolo}\label{fig:EsRieDistanza11}
+\end{center}
+\end{exercise}
+\begin{exercise}
+	Calcola il perimetro della che ha per vertici $A\coord{-3}{1}$, $B\coord{-1}{4}$, $C\coord{-6}{4}$ e  $D\coord{-8}{1}$
+	\tcblower
+	Calcoliamo la lunghezza tra $AB$ come con \cref{exa:discinque} 
+	\begin{align*}
+		d(AB)=&\sqrt{(-3+1)^2+(1-4)^2}\\
+		=&\sqrt{4+9}\\
+		=&\sqrt{13}\\
+	\end{align*}
+	Calcolo la distanza tra $CB$ come con l'\cref{exa:disuno} 
+	quindi \[d(CB)=\abs{-1+6}=\abs{5}=5\]
+	Ora calcoliamo la distanza tra $CD$ come con \cref{exa:discinque} 
+	\begin{align*}
+		d(CD)=&\sqrt{(-6+8)^2+(4-1)^2}\\
+			=&\sqrt{4+9}\\
+		=&\sqrt{13}
+	\end{align*}
+	Calcolo la distanza tra $DA$ come con l'\cref{exa:disuno} 
+	quindi \[d(DA)=\abs{-3+8}=\abs{5}=5\]
+	Conseguentemente il perimetro è
+	\[2P=5+\sqrt{13}+5+\sqrt{13}=10+2\sqrt{13}\]
+	\begin{center}
+		\includestandalone[width=.5\textwidth]{terzo/grafici/retta_dis_12}
+		\captionof{figure}{Perimetro}\label{fig:EsRieDistanza12}
+	\end{center}
+\end{exercise}
+\section{Rette parallele e perpendicolari}
+\begin{exercise}
+	La retta $7x+6y+4=0$ incontra l'asse $y$ nel punto $A$. Trovare la retta perpendicolare e la retta parallela alla retta $8x+5y+1=0$ che passano per $A$
+	\tcblower
+	La retta $7x+6y+4=0$ incontra l'asse $y$ nel punto $A$. Trovare la retta perpendicolare e la retta parallela alla retta $8x+5y+1=0$ che passano per $A$.
+	Troviamo le coordinate del punto $A$ scrivo la retta  $7x+6y+4=0$ in forma esplicita
+	\begin{align*}
+	6y=&-7x-4\\
+	y=&-\dfrac{7}{6}x-\dfrac{4}{6}\\
+	y=&-\dfrac{7}{6}x-\dfrac{2}{3}\\
+	\end{align*}
+	Quindi $q=-\dfrac{2}{3}$ per cui $A\coord{0}{-\dfrac{2}{3}}$. Per trovare la retta perpendicolare a $8x+5y+1=0$ devo calcolarne il coefficiente angolare.
+	Scrivo la retta in forma esplicita.
+		\begin{align*}
+		5y=&-8x-1\\
+		y=&-\dfrac{8}{5}x-\dfrac{1}{5}\\
+		\end{align*}
+	$m=-\dfrac{8}{5}$ utilizzando la formula \[m_1\cdot m_2=-1\] Otteniamo
+	\begin{align*}
+-\dfrac{8}{5}\cdot m_2=&-1\\
+\dfrac{8}{5}\cdot m_2=&1\\
+ m_2=&\dfrac{5}{8}\\
+	\end{align*}
+	Utilizzando l'equazione del fascio di rette, il valore di $m_2$ trovato e le coordinate di $A$ Otteniamo:
+	\begin{align*}
+	y+\dfrac{2}{5}=&\dfrac{5}{8}x\\
+		y=&\dfrac{5}{8}x-\dfrac{2}{5}
+	\end{align*}
+	Cioè l'equazione della retta perpendicolare cercata.
+	
+	Due rette sono parallele se hanno lo stesso coefficiente angolare quindi \[m_1=m_2 \]
+	quindi $m_2=-\dfrac{8}{5}$ 
+	
+	Utilizzando l'equazione del fascio di rette, il valore di $m_2$ trovato e le coordinate di $A$ Otteniamo:
+		\begin{align*}
+		y+\dfrac{2}{5}=&-\dfrac{8}{5}x\\
+		y=&-\dfrac{8}{5}x-\dfrac{2}{5}
+		\end{align*}
+	Cioè l'equazione della retta parallela cercata.		
+	\begin{center}
+\includestandalone[width=.5\textwidth]{terzo/grafici/retta_dis_13}
+%\captionof{figure}{Grafico}\label{fig:EsRiedistanza13}
+\end{center}
+\end{exercise}
+\begin{exercise}
+Data la retta $r$ di equazione $y=7x+6$, trovarne le intersezioni con gli assi. Indicato con $A$ il punto di intersezione di $r$ con l'asse $x$ e con $B$ il punto di intersezione con $r$ l'asse $y$. Trovare la retta $s$ perpendicolare a $r$ che passa $A$.
+Trovare la retta $t$ parallela a $s$ che passa per $B$. Disegnare la rette.
+\tcblower
+Data la retta $r$ di equazione $y=7x+6$, trovarne le intersezioni con gli assi. Indicato con $A$ il punto di intersezione di $r$ con l'asse $x$ e con $B$ il punto di intersezione con $r$ l'asse $y$. Trovare la retta $s$ perpendicolare a $r$ che passa $A$.
+Trovare la retta $t$ parallela a $s$ che passa per $B$. Disegnare la rette.
+	
+Intersezione con l'asse $x$ di $y=7x+6$
+\begin{align*}
+7x+6=&0\\
+7x=&-6\\
+x=&-\dfrac{6}{7}
+\end{align*}
+ $A\coord{-\dfrac{6}{7}}{0}$
+ 
+ Intersezione con l'asse $y$
+  $A\coord{0}{6}$
+ 
+ 	$m=7$ utilizzando la formula \[m_1\cdot m_2=-1\] Otteniamo
+ 	\begin{align*}
+ 	7\cdot m_2=&-1\\
+ 	m_2=&-\dfrac{1}{7}\\
+ \end{align*}
+ 
+ 	Utilizzando l'equazione del fascio di rette, il valore di $m_2$ trovato e le coordinate di $A$ Otteniamo:
+ 	\begin{align*}
+ 	y=&-\dfrac{1}{7}(x+\dfrac{6}{7})\\
+ 	y=&-\dfrac{1}{7}x-\dfrac{6}{49}
+ 	\end{align*}
+ 	Cioè l'equazione della retta perpendicolare cercata.
+ 	
+	Due rette sono parallele se hanno lo stesso coefficiente angolare quindi \[m_1=m_2 \]
+	quindi $m_2=-\dfrac{1}{7}$ 
+	
+	Utilizzando l'equazione del fascio di rette, il valore di $m_2$ trovato e le coordinate di $B$ Otteniamo:
+	\begin{align*}
+	y-6=&-\dfrac{1}{7}x\\
+	y=&-\dfrac{1}{7}x+6\\
+	\end{align*}
+	Cioè l'equazione della retta parallela cercata.	
+		\begin{center}
+			\includestandalone[width=.5\textwidth]{terzo/grafici/retta_dis_14}
+			%\captionof{figure}{Grafico}\label{fig:EsRiedistanza13}
+		\end{center} 	
+\end{exercise}
+\begin{exercise}
+	Trovare la retta che passa per $A\coord{7}{6}$, parallela alla retta che passa per $B\coord{-13}{8}$ e $C\coord{5}{1}$
+	\tcblower
+	Trovare la retta che passa per $A\coord{7}{6}$ , parallela alla retta che passa per $B\coord{-13}{8}$ e $C\coord{5}{1}$
+	
+	Troviamo il coefficiente angolare della retta che passa per $B$ e $C$
+	\begin{align*}
+		y-8=&(x+13)\\
+		1-8=&(5+13)\\
+		-7=&18m\\
+		m=&-\dfrac{7}{18}
+	\end{align*}
+	
+		Due rette sono parallele se hanno lo stesso coefficiente angolare quindi \[m_1=m_2 \]
+		quindi $m_2=-\dfrac{7}{18}$ 
+		
+		Utilizzando l'equazione del fascio di rette, il valore di $m_2$ trovato e le coordinate di $A$ Otteniamo:
+		\begin{align*}
+			y-6=&-\dfrac{7}{18}(x-7)\\
+			y=&-\dfrac{7}{18}x+\dfrac{49}{18}+6\\
+			y=&-\dfrac{7}{18}x+\dfrac{157}{18}\\
+		\end{align*}
+		Cioè l'equazione della retta parallela cercata.	
+			\begin{center}
+				\includestandalone[width=.5\textwidth]{terzo/grafici/retta_dis_15}
+				%\captionof{figure}{Grafico}\label{fig:EsRiedistanza13}
+			\end{center}
+\end{exercise}	
+\begin{exercise}
+	Data la retta $-3x+14y-13=0$, scrivi l'equazione della retta parallela e della retta perpendicolare che passano per  $A\coord{-5}{-2}$
+	\tcblower
+	Data la retta $-3x+14y-13=0$, scrivi l'equazione della retta parallela e della retta perpendicolare che passano per  $A\coord{-5}{-2}$
+	
+	Scrivo la retta in forma esplicita
+	\begin{align*}
+		-3x+14y-13=&0\\
+		14y=&+3x+13\\
+		y=&\dfrac{3}{13}x+\dfrac{13}{14}
+	\end{align*}
+	 	$m=\dfrac{3}{14}$ utilizzando la formula \[m_1\cdot m_2=-1\] Otteniamo
+	 	\begin{align*}
+	 		\dfrac{3}{14}\cdot m_2=&-1\\
+	 		m_2=&-\dfrac{14}{3}\\
+	 	\end{align*}
+	 		Utilizzando l'equazione del fascio di rette, il valore di $m_2$ trovato e le coordinate di $A$ Otteniamo:
+	 		\begin{align*}
+	 			y+2=&-\dfrac{14}{3}(x+5)\\
+	 			y=&-\dfrac{14}{3}x-\dfrac{70}{3}-2\\
+	 			y=&-\dfrac{14}{3}x-\dfrac{76}{3}\\
+	 		\end{align*}
+	 		Cioè l'equazione della retta perpendicolare cercata.
+	 		
+	 		Due rette sono parallele se hanno lo stesso coefficiente angolare quindi \[m_1=m_2 \]
+	 		quindi $m_2=\dfrac{3}{14}$ 
+	 		
+	 		Utilizzando l'equazione del fascio di rette, il valore di $m_2$ trovato e le coordinate di $A$ Otteniamo:
+	 		\begin{align*}
+	 			y+2=&\dfrac{3}{14}(x+5)\\
+	 			y=&\dfrac{3}{14}x+\dfrac{15}{14}-2\\
+	 			y=&-\dfrac{3}{14}x-\dfrac{13}{14}\\
+	 		\end{align*}
+	 		Cioè l'equazione della retta parallela cercata.
+	 		
+	 			\begin{center}
+	 				\includestandalone[width=.5\textwidth]{terzo/grafici/retta_dis_16}
+	 				%\captionof{figure}{Grafico}\label{fig:EsRiedistanza13}
+	 			\end{center}
+\end{exercise}
+\section{Retta intersezioni}
+\begin{exercise}
+	Dati i punti  $A\coord{-13}{-12}$, $B\coord{-15}{-8}$,trovare l'equazione della retta che passa per questi punti. Trovare le coordinate dei punti di intersezione con gli assi della retta trovata. Disegnare la retta.
+	\tcblower
+	Dati i punti  $A\coord{-13}{-12}$, $B\coord{-15}{-8}$,trovare l'equazione della retta che passa per questi punti. Trovare le coordinate dei punti di intersezione con gli assi della retta trovata. Disegnare la retta.
+	
+	Consideriamo l'equazione  $\dfrac{y-y_1}{y_2-y_1}=\dfrac{x-x_1}{x_2-x_1}$
+	\begin{align*}
+		\intertext{Passaggio per  $A\coord{-13}{-12}$, $B\coord{-15}{-8}$}
+		\dfrac{y+12}{-8+12}=&\dfrac{x+13}{-15+13}\\
+		\dfrac{y+12}{4}=&\dfrac{x+13}{-2}\\
+		-2y-24=&4x+52\\
+		4x+2y+76=&0\\
+		2x+y+38=&0\\
+	\end{align*}
+	Otteniamo la retta cercata.
+	Intersezione con l'asse $x$ di $2x+y+38=0$
+	\begin{align*}
+		2x+38=&0\\
+		2x=&-38\\
+		x=&-19
+	\end{align*}
+	$A\coord{-19}{0}$
+	
+	Intersezione con l'asse $y$
+	$B\coord{0}{-38}$
+		\begin{center}
+			\includestandalone[width=.6\textwidth]{terzo/grafici/retta_dis_17}
+			%\captionof{figure}{Grafico}\label{fig:EsRiedistanza13}
+		\end{center}
+\end{exercise}
+\begin{exercise}
+Date le rette $y=3x+3$ e $y=-2x-2$ trovare, se esiste, il loro punto di intersezione $A$.
+\tcblower
+Date le rette $y=3x+3$ e $y=-2x-2$ trovare, se esiste, il loro punto di intersezione $A$.
+\begin{align*}
+&\begin{cases}
+y=3x+3\\
+y=-2x-2
+\end{cases}
+&&\begin{cases}
+y=3x+3\\
+3x+5=-2x-2
+\end{cases}\\
+&\begin{cases}
+y=3x+3\\
+5x=-3-2
+\end{cases}
+&&\begin{cases}
+y=3x+3\\
+5x=-5
+\end{cases}\\
+&\begin{cases}
+y=3(-1)+3\\
+x=-1
+\end{cases}
+&&\begin{cases}
+y=0\\
+x=-1
+\end{cases}
+\end{align*}
+	$A\coord{-1}{0}$
+		\begin{center}
+		\includestandalone[width=.6\textwidth]{terzo/grafici/retta_dis_18}
+			%\captionof{figure}{Grafico}\label{fig:EsRiedistanza13}
+		\end{center}
+\end{exercise}
+\begin{exercise}
+Date le rette $y=-3x+1$ e $x+y-3=0$ trovare,se esiste, il loro punto di intersezione $A$. 
+\tcblower
+Date le rette $y=-3x+1$ e $x+y-3=0$ trovare,se esiste, il loro punto di intersezione $A$.
+\begin{align*}
+&\begin{cases}
+x+y-3=0\\
+y=-3x+1
+\end{cases}
+&&\begin{cases}
+x-3x+1-3=0\\
+y=-3x+1
+\end{cases}\\
+&\begin{cases}
+-2x-2=0\\
+y=-3x+1
+\end{cases}
+&&\begin{cases}
+y=-1\\
+y=-3(-1)+1
+\end{cases}\\
+&\begin{cases}
+y=4\\
+x=-1
+\end{cases}
+\end{align*}
+$A\coord{-1}{4}$
+\begin{center}
+	\includestandalone[width=.6\textwidth]{terzo/grafici/retta_dis_19}
+	%\captionof{figure}{Grafico}\label{fig:EsRiedistanza13}
+\end{center}
+\end{exercise}
+\begin{exercise}
+	Date le rette $y=-2x+5$ e $y=x+1$ trovare,se esiste, il loro punto di intersezione $A$. Trovare l'equazione della parallela a $y=5x+4$ che passa per il punto $A$.
+	\tcblower
+	Date le rette $y=-2x+5$ e $y=x+1$ trovare,se esiste, il loro punto di intersezione $A$. Trovare l'equazione della parallela a $y=5x+4$ che passa per il punto $A$.
+	\begin{align*}
+	&\begin{cases}
+	y=-2x+5\\
+	y=x+1
+	\end{cases}
+	&&\begin{cases}
+	-2x+5=x+1\\
+	y=x+1
+	\end{cases}\\
+	&\begin{cases}
+	-3x=-4\\
+	y=x+1
+	\end{cases}
+	&&\begin{cases}
+	y=\dfrac{4}{3}\\[.5em]
+	y=\dfrac{4}{3}+1
+	\end{cases}\\
+	&\begin{cases}
+y=\dfrac{4}{3}\\[.5em]
+y=\dfrac{7}{3}
+	\end{cases}
+	\end{align*}
+	$A\coord{\dfrac{4}{3}}{\dfrac{7}{3}}$
+	Due rette sono parallele se hanno lo stesso coefficiente angolare quindi \[m_1=m_2 \]
+	quindi $m_2=5$
+	
+	Utilizzando l'equazione del fascio di rette, il valore di $m_2$ trovato e le coordinate di $A$ Otteniamo:
+	\begin{align*}
+	y-\dfrac{7}{3}=&5(x-\dfrac{4}{3})\\
+	y=&5x-\dfrac{20}{3}+\dfrac{7}{3}\\
+	y=&5x-\dfrac{13}{3}\\
+	\end{align*}
+	Cioè l'equazione della retta parallela cercata.
+	\begin{center}
+		\includestandalone[width=.6\textwidth]{terzo/grafici/retta_dis_20}
+		%\captionof{figure}{Grafico}\label{fig:EsRiedistanza13}
+	\end{center}
+	
+\end{exercise}
+\tcbstoprecording
+\newpage
+\section{Soluzioni esercizi di riepilogo}
+\tcbinputrecords							

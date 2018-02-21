@@ -1,0 +1,30 @@
+\documentclass{standalone}
+\usepackage{pgf,tikz}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\begin{document}
+	\definecolor{uuuuuu}{rgb}{0.26666666666666666,0.26666666666666666,0.26666666666666666}
+	\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+	\draw[->,color=black] (-8.01526613596692,0.) -- (10.348298674916128,0.);
+	\foreach \x in {-8.,-6.,-4.,-2.,2.,4.,6.,8.,10.}
+	\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
+	\draw[->,color=black] (0.,-8.05830234845305) -- (0.,3.9927870586889305);
+	\foreach \y in {-8.,-6.,-4.,-2.,2.}
+	\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
+	\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$};
+	\clip(-8.01526613596692,-8.05830234845305) rectangle (10.348298674916128,3.9927870586889305);
+	\draw [samples=50,rotate around={0.:(2.,-3.)},xshift=2.cm,yshift=-3.cm,domain=-12.0:12.0)] plot (\x,{(\x)^2/2/2.0});
+	\draw (2.,-8.05830234845305) -- (2.,3.9927870586889305);
+	\draw [domain=-8.01526613596692:10.348298674916128] plot(\x,{(-4.-0.*\x)/1.});
+%	\begin{scriptsize}
+
+	\draw[color=black] (3.4978282083562418,2.77333158296623) node {$Asse: x = 2$};
+	\draw [fill=uuuuuu] (2.,-2.) circle (2.5pt);
+	\draw[color=uuuuuu] (4.645551009036431,-1.853425957275781) node {$Fuoco = (2, -2)$};
+	\draw [fill=uuuuuu] (2.,-3.) circle (2.5pt);
+	\draw[color=uuuuuu] (4.071689608696337,-3.216346783083505) node {$Vertice = (2, -3)$};
+	\draw[color=black] (-5.899152222212819,-3.3956784706897842) node {$Direttrice: y = -4$};
+%	\end{scriptsize}
+	\end{tikzpicture}
+\end{document}

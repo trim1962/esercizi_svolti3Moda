@@ -1,0 +1,544 @@
+\chapter{Retta}
+\label{cha:retta}
+\section{Disegnare una retta}
+\begin{esempiot}{Retta nota}{retta1}
+	Disegnare il grafico della retta $y=x+1$
+\end{esempiot}
+\begin{enumerate}
+	\item Costruiamo la tabella a doppia entrata 
+		\begin{tabular}{c|c}
+		x & y\\
+		\hline 
+		&  \\ 
+		&  \\ 
+	\end{tabular}
+	\item Si attribuisce  un valore alla $x$ e si completa la tabella
+	$y=1+1=2$
+	\begin{tabular}{c|c}
+		x & y\\
+		\hline 
+		1	& 2 \\ 
+		&  \\ 
+	\end{tabular}
+	\item Si da un altro valore alla $x$ si ottiene 
+	$y=2+1=3$
+	\begin{tabular}{c|c}
+		x & y\\
+		\hline 
+		1	& 2 \\ 
+		2& 3 \\ 
+	\end{tabular}
+	\item Ottengo le coppie $A\coord{1}{2}$\,$B\coord{2}{3}$ che unite formano il grafico~\vref{fig:disegnoretta1}
+\end{enumerate}
+\begin{center}
+\includestandalone[width=.6\textwidth]{terzo/grafici/retta_dis_1}
+\captionof{figure}{Due punti una retta}\label{fig:disegnoretta1}
+\end{center}
+\begin{esempiot}{Retta nota}{retta2}
+	Disegnare il grafico della retta $y=-2x+1$
+\end{esempiot}
+\begin{enumerate}
+	\item Costruiamo la tabella a doppia entrata 
+	\begin{tabular}{c|c}
+		x & y\\
+		\hline 
+		&  \\ 
+		&  \\ 
+	\end{tabular}
+	\item Si attribuisce  un valore alla $x$ e si completa la tabella
+	$y=-2+1=-1$
+	\begin{tabular}{c|c}
+		x & y\\
+		\hline 
+		1	& -1 \\ 
+		&  \\ 
+	\end{tabular}
+	\item Si da un altro valore alla $x$ si ottiene 
+	$y=-2(-1)+1=2+1=3$
+	\begin{tabular}{c|c}
+		x & y\\
+		\hline 
+		1	& 2 \\ 
+		-1& 3 \\ 
+	\end{tabular}
+	\item Ottengo le coppie $A\coord{1}{2}$\,$B\coord{2}{3}$ che unite formano il grafico~\vref{fig:disegnoretta2}
+\end{enumerate}
+\begin{center}
+	\includestandalone[width=.5\textwidth]{terzo/grafici/retta_dis_2}
+	\captionof{figure}{Due punti una retta}\label{fig:disegnoretta2}
+\end{center}
+\begin{esempiot}{Retta nota parallela all'asse $x$}{retta3}
+	Disegnare il grafico della retta $y=2$
+\end{esempiot}
+\begin{enumerate}
+	\item Costruiamo la tabella a doppia entrata 
+	\begin{tabular}{c|c}
+		x & y\\
+		\hline 
+		1&2\\ 
+		2&2\\ 
+	\end{tabular}
+	\item Ottengo le coppie $A\coord{1}{2}$\,$B\coord{2}{2}$ che unite formano il grafico~\vref{fig:disegnoretta3}
+\end{enumerate}
+\begin{center}
+	\includestandalone[width=.6\textwidth]{terzo/grafici/retta_dis_3}
+	\captionof{figure}{Due punti una retta}\label{fig:disegnoretta3}
+\end{center}
+\begin{esempiot}{Retta nota parallela asse $y$}{retta4}
+	Disegnare il grafico della retta $x=2$
+\end{esempiot}
+\begin{enumerate}
+	\item Costruiamo la tabella a doppia entrata 
+	\begin{tabular}{c|c}
+		x & y\\
+		\hline 
+		2&1\\ 
+		2&2\\ 
+	\end{tabular}
+	\item Ottengo le coppie $A\coord{2}{1}$\,$B\coord{2}{2}$ che unite formano il grafico~\vref{fig:disegnoretta4}
+\end{enumerate}
+\begin{center}
+	\includestandalone[width=.6\textwidth]{terzo/grafici/retta_dis_4}
+	\captionof{figure}{Due punti una retta}\label{fig:disegnoretta4}
+\end{center}
+\section{Passaggio per un punto}
+\begin{esempiot}{Verificare se una retta passa per un punto}{punto1}
+Data la retta $y=3x+5$ Verificare se la retta passa per i punti $A\coord{1}{8}$\,$B\coord{-1}{3}$
+\end{esempiot}
+Verifico se la retta passa per il punto $A\coord{1}{8}$ 
+\begin{enumerate}
+	\item Sostituisco $A\coord{1}{8}$ nella retta $y=3x+5$ 
+	\item Ottengo  \begin{tabular}{rll}
+		$8=$&$+3\cdot 1$ &$+5$  \\ 
+		$8=$&$3+5$  \\ 
+		$8=$&$8$  \\ 
+	\end{tabular}
+\end{enumerate}	
+	La retta passa per $A$
+	
+Verifico se la retta passa per il punto $B\coord{-1}{3}$
+\begin{enumerate}
+	\item Sostituisco $B\coord{-1}{3}$ nella retta $y=3x+5$ 
+	\item Ottengo  \begin{tabular}{rll}
+		$3=$&$+3\cdot (-1)$ &$+5$  \\ 
+		$3=$&$-3+5$  \\ 
+		$8=$&$2$  \\ 
+	\end{tabular}
+\end{enumerate}	
+La retta non passa per $B$ 
+\section{Retta per due punti}
+\begin{esempiot}{Dati due punti trovare l'equazione della retta}{retta5}
+Data la coppia di punti	$A\coord{1}{3}$\,$B\coord{-1}{1}$ trovare l'equazione della retta che passa per questi punti.
+\end{esempiot}
+\begin{enumerate}
+	\item Consideriamo la retta generica $y=mx+q$
+	\item Passaggio per $A\coord{1}{3}$ otteniamo $3=1\cdot m+q$
+	\item Passaggio per $B\coord{-1}{1}$ otteniamo $1=-1\cdot m+q$
+	\item Allineo i due risultati e sottraggo
+	\begin{tabular}{rll}
+	$3=$&$+1\cdot m$ &$+q$  \\ 
+	$1=$&$-1\cdot m$ &$+q$  \\ 
+	\hline  $2=$&$+2\cdot m$& $0$ \\ 
+	\end{tabular} 
+	\item Semplifico e otteniamo $m=1$
+	\item Prendo una delle precedenti relazioni e sostituisco il valore di $m=1$ trovato
+	\item \begin{tabular}{rll}
+			$3=$&$+1\cdot 1$ &$+q$  \\ 
+			$3=$&$+1$ &$+q$  \\ 
+			$3-1=$& $+q$  \\ 
+			$q=$&$+2$ 
+		\end{tabular} 
+	\item Quindi $m=1$ $q=2$ che sostituiti in $y=mx+q$ otteniamo l'equazione cercata $y=x+2$
+\end{enumerate}
+\begin{esempiot}{Dati due punti trovare l'equazione della retta}{retta6}
+	Data la coppia di punti	$A\coord{-2}{3}$\,$B\coord{3}{-1}$ trovare l'equazione della retta che passa per questi punti.
+\end{esempiot}
+\begin{enumerate}
+	\item Consideriamo la retta generica $y=mx+q$
+	\item Passaggio per $A\coord{-2}{3}$ otteniamo $3=-2\cdot m+q$
+	\item Passaggio per $B\coord{3}{-1}$ otteniamo $-1=3\cdot m+q$
+	\item Allineo i due risultati e sottraggo
+	\begin{tabular}{rll}
+		$+3=$&$-2\cdot m$ &$+q$  \\ 
+		$-1=$&$+3\cdot m$ &$+q$  \\ 
+		\hline $+4=$&$-5\cdot m$& $0$ \\ 
+	\end{tabular} 
+	\item Semplifico e otteniamo $m=-\dfrac{4}{5}$
+	\item Prendo una delle precedenti relazioni e sostituisco il valore di $m=-\dfrac{4}{5}$ trovato
+	\item \begin{tabular}{rll}
+		$-1=$&$+3\cdot(-\dfrac{4}{5}) $ &$+q$  \\ 
+		$-1=$&$-\dfrac{12}{5}$ &$+q$  \\ 
+		$-1+\dfrac{12}{5}=$& $+q$  \\ 
+		$q=$&$\dfrac{7}{5}$ 
+	\end{tabular} 
+	\item Quindi $m=-\dfrac{4}{5}$ $q=\dfrac{7}{5}$ che sostituiti in $y=mx+q$ otteniamo l'equazione cercata $y=-\dfrac{4}{5}x+\dfrac{7}{5}$
+\end{enumerate}
+\begin{cesempiot}{Dati due punti trovare l'equazione della retta}{retta6a}
+	Data la coppia di punti	$A\coord{3}{5}$\,$B\coord{3}{2}$ trovare l'equazione della retta che passa per questi punti.
+\end{cesempiot}
+\begin{enumerate}
+	\item Consideriamo la retta generica $y=mx+q$
+	\item Passaggio per $A\coord{3}{5}$ otteniamo $5=3\cdot m+q$
+	\item Passaggio per $B\coord{3}{2}$ otteniamo $2=3\cdot m+q$
+	\item Allineo i due risultati e sottraggo
+	\begin{tabular}{rll}
+		$5=$&$3\cdot m$ &$+q$  \\ 
+		$2=$&$3\cdot m$ &$+q$  \\ 
+		\midrule $3=$&$0$& $0$ \\ 
+	\end{tabular} 
+	\item Impossibile, il metodo non funziona.
+	\item I punti $A$ e $B$ hanno la stessa ascissa.
+	\item In questo caso l'equazione è $x=3$
+\end{enumerate}
+\section{Retta per un punto parallela a retta data}
+\begin{esempiot}{Dato un punto e una retta parallela}{retta7}
+	Data la retta $y=3x+4$ Trovare la retta parallela alla retta data che  passa per il punto	$A\coord{2}{3}$
+\end{esempiot}
+\begin{enumerate}
+	\item Consideriamo la retta generica $y=mx+q$
+	\item Le due rette sono parallele quindi $m=3$ otteniamo $y=3x+q$
+	\item Passaggio per $A\coord{2}{3}$ otteniamo 
+	\begin{tabular}{rll}
+	$3=$&$3\cdot 2$&$+q$\\
+	$3-6=$&$q$\\
+	$q=$&$-3$\\
+	\end{tabular}
+\end{enumerate}
+
+La retta cercata è $y=3x-3$ procedendo come con l'\cref{exa:retta1}
+otteniamo
+\begin{center}
+	\includestandalone[width=.6\textwidth]{terzo/grafici/retta_dis_7}
+	\captionof{figure}{Retta parallela a retta data}\label{fig:disegnoretta7}
+\end{center}
+\begin{esempiot}{Dato un punto e una retta parallela}{retta8}
+	Data la retta $y=-3x+5$ Trovare la retta parallela alla retta data che  passa per il punto	$A\coord{-2}{4}$
+\end{esempiot}
+\begin{enumerate}
+	\item Consideriamo la retta generica $y=mx+q$
+	\item Le due rette sono parallele quindi $m=-3$ otteniamo $y=-3x+q$
+	\item Passaggio per $A\coord{-2}{4}$ otteniamo 
+	\begin{tabular}{rll}
+		$4=$&$-3\cdot (-2)$&$+q$\\
+		$4-6=$&$q$\\
+		$q=$&$-2$\\
+	\end{tabular}
+\end{enumerate}
+
+La retta cercata è $y=-3x-2$ procedendo come con l'\cref{exa:retta1}
+otteniamo
+\begin{center}
+	\includestandalone[width=.6\textwidth]{terzo/grafici/retta_dis_8}
+	\captionof{figure}{Retta parallela a retta data}\label{fig:disegnoretta8}
+\end{center}
+\begin{esempiot}{Dato un punto e una retta parallela}{retta8a}
+	Trovare la retta parallela all'asse $x$ che passa per $A\coord{1}{2}$
+\end{esempiot}
+La retta cercata è $y=2$ procedendo come con l'\cref{exa:retta3}
+otteniamo
+\begin{center}
+	\includestandalone[width=.6\textwidth]{terzo/grafici/retta_dis_8a}
+	\captionof{figure}{Retta parallela all'asse $x$}\label{fig:disegnoretta8a}
+\end{center}
+\section{Retta per un punto perpendicolare a retta data}
+\begin{esempiot}{Dato un punto e una retta perpendicolare}{retta9}
+	Data la retta $y=2x+2$ Trovare la retta perpendicolare alla retta data che  passa per il punto	$A\coord{2}{4}$
+\end{esempiot}
+\begin{enumerate}
+	\item Consideriamo la retta generica $y=m_2x+q$
+	\item Le due rette sono perpendicolari quindi $2\cdot m_2=-1$ otteniamo $m_2=-\dfrac{1}{2}$ quindi $y=-\dfrac{1}{2}x+q$
+	\item Passaggio per $A\coord{2}{4}$ otteniamo 
+	\begin{tabular}{rll}
+		$4=$&$-\dfrac{1}{2}\cdot 2$&$+q$\\
+		$4+1=$&$q$\\
+		$q=$&$5$\\
+	\end{tabular}
+\end{enumerate}
+
+La retta cercata è $y=-\dfrac{1}{2}x+5$ procedendo come con l'\cref{exa:retta3}
+otteniamo
+\begin{center}
+	\includestandalone[width=.6\textwidth]{terzo/grafici/retta_dis_9}
+	\captionof{figure}{Retta perpendicolare a retta data}\label{fig:disegnoretta9}
+\end{center}
+\begin{esempiot}{Dato un punto e una retta perpendicolare}{retta10}
+	Data la retta $y=-x+3$ Trovare la retta perpendicolare alla retta data che  passa per il punto	$A\coord{-1}{-1}$
+\end{esempiot}
+\begin{enumerate}
+	\item Consideriamo la retta generica $y=m_2x+q$
+	\item Le due rette sono perpendicolari quindi $-1\cdot m_2=-1$ otteniamo $m_2=1$ quindi $y=x+q$
+	\item Passaggio per $A\coord{-1}{-1}$ otteniamo 
+	\begin{tabular}{rll}
+		$-1=$&$-1$&$+q$\\
+		$-1+1=$&$q$\\
+		$q=$&$0$\\
+	\end{tabular}
+\end{enumerate}
+
+La retta cercata è $y=x$ procedendo come con l'\cref{exa:retta1}
+otteniamo
+\begin{center}
+	\includestandalone[width=.6\textwidth]{terzo/grafici/retta_dis_10}
+	\captionof{figure}{Retta perpendicolare a retta data}\label{fig:disegnoretta10}
+\end{center}
+\section{Fascio di rette}
+\begin{esempiot}{Trovare l'equazione del fascio passante per un punto}{retta11}
+	Dato il punto	$A\coord{3}{4}$ trovare l'equazione del fascio di centro $A$
+\end{esempiot}
+Partendo da $y-y_1=m(x-x_1)$ passaggio per 	$A\coord{3}{4}$
+\begin{align*}
+	y-4=&m(x-3)\\
+	y=&m(x-3)+4
+\end{align*}
+L'equazione cercata è $y=m(x-3)+4$
+\begin{esempiot}{Trovare l'equazione del fascio passante per un punto}{retta12}
+	Dato il punto	$A\coord{3}{4}$ trovare l'equazione del fascio di centro $A$
+\end{esempiot}
+Partendo da $y-y_1=m(x-x_1)$ passaggio per 	$A\coord{-1}{-2}$
+\begin{align*}
+	y+2=&m(x+1)\\
+	y=&m(x+1)-2
+\end{align*}
+L'equazione cercata è $y=m(x+1)$
+\begin{esempiot}{Dati due punti trovare il coefficiente angolare della retta che passa per questi punti}{retta13}
+	Dati i punti $A\coord{2}{5}$ e $B\coord{3}{7}$ trovare il coefficiente angolare della retta che passa per  $A$ E $B$
+\end{esempiot}
+\begin{align*}
+	m=&\dfrac{y_2-y_1}{x_2-x_1}\\
+	\intertext{Passaggio per $A\coord{2}{5}$ e $B\coord{3}{7}$}
+	m=&\dfrac{7-5}{3-2}\\
+	m=&\dfrac{2}{1}\\
+	m=&2\\
+\end{align*}
+Ilcoefficiente angolare $m=2$
+\begin{cesempiot}{Dati due punti trovare il coefficiente angolare della retta che passa per questi punti}{retta13a}
+	Dati i punti $A\coord{2}{5}$ e $B\coord{2}{7}$ trovare il coefficiente angolare della retta che passa per  $A$ E $B$
+\end{cesempiot}
+\begin{align*}
+	m=&\dfrac{y_2-y_1}{x_2-x_1}\\
+	\intertext{Passaggio per $A\coord{2}{5}$ e $B\coord{2}{7}$}
+	m=&\dfrac{7-5}{2-2}\\
+	m=&\dfrac{2}{0}\\
+\intertext{Impossibile}
+\end{align*}
+Non esiste il coefficiente angolare.
+\subsection{Retta per un punto parallela a retta data}
+\begin{esempiot}{Dato un punto e una retta parallela}{retta14}
+	Data la retta $y=3x+4$ Trovare la retta parallela alla retta data che  passa per il punto	$A\coord{2}{3}$
+\end{esempiot}
+Consideriamo l'equazione generica del fascio $y-y_1=m(x-x_1)$, se le due rette sono parallele $m=3$ quindi
+\begin{align*}
+	y-y_1=&3(x-x_1)\\
+	\intertext{Passaggio per $A\coord{2}{3}$}
+	y-3=&3(x-2)\\
+	y=&3x-6+3\\
+	y=&3x-3\\
+\end{align*}
+Otteniamo 	$y=3x-3$ lo stesso risultato dell'\cref{exa:retta7}
+\subsection{Retta per un punto perpendicolare a retta data}
+\begin{esempiot}{Dato un punto e una retta perpendicolare}{retta15}
+	Data la retta $y=2x+2$ Trovare la retta perpendicolare alla retta data che  passa per il punto	$A\coord{2}{4}$
+\end{esempiot}
+Consideriamo l'equazione generica del fascio $y-y_1=m(x-x_1)$, se le due rette sono parallele $m_1\cdot m_2=-1$ quindi $2m_2=-1$ $m_2=-\dfrac{1}{2}$
+\begin{align*}
+	y-y_1=&-\dfrac{1}{2}(x-x_1)\\
+	\intertext{Passaggio per $A\coord{2}{4}$}
+	y-4=&-\dfrac{1}{2}(x-2)\\
+	y=&-\dfrac{1}{2}x+1+4\\
+	y=&-\dfrac{1}{2}x+5\\
+\end{align*}
+Otteniamo 	$y=-\dfrac{1}{2}x+5$ lo stesso risultato dell'\cref{exa:retta9}
+\subsection{Retta per due punti}
+\begin{esempiot}{Fascio di rette e retta per due punti}{rettaf1}
+Dati due punti $A\coord{-5}{2}$ $B\coord{3}{6}$ trovare la retta che passa per questi punti.
+\end{esempiot}
+\begin{enumerate}
+	\item Consideriamo l'equazione del fascio $y-y_1=m(x-x_1)$
+	\item Passaggio per $A\coord{-5}{2}$ otteniamo $y-2=m(x+5)$
+	\item Trovo il coefficiente angolare come con l'\cref{exa:retta13}
+	\item $m=\dfrac{1}{2}$
+	\item \begin{align*}
+		y-2=&\dfrac{1}{2}(x+3)\\
+		y=&\dfrac{1}{2}x+\dfrac{3}{2}+2\\
+		y=&\dfrac{1}{2}x+\dfrac{7}{2}
+	\end{align*}
+\end{enumerate}
+\begin{esempiot}{Fascio di rette e retta per due punti}{rettaf2}
+	Dati due punti $A\coord{3}{6}$ $B\coord{5}{2}$ trovare la retta che passa per questi punti.
+\end{esempiot}
+\begin{enumerate}
+	\item Consideriamo l'equazione del fascio $y-y_1=m(x-x_1)$
+	\item Passaggio per $A\coord{3}{6}$ otteniamo $y-6=m(x-3)$
+	\item Passaggio per $B\coord{5}{2}$ otteniamo $2-6=m(5-3)$
+	\item Semplifico $-4=m2$
+	\item $m=-2$
+	\item \begin{align*}
+		y-6=&-2(x-3)\\
+		y=&-2x+6+6\\
+		y=&-2x+12
+	\end{align*}
+\end{enumerate}
+\begin{cesempiot}{Fascio di rette e retta per due punti}{rettaf3a}
+	Dati due punti $A\coord{2}{3}$ $B\coord{2}{5}$ trovare la retta che passa per questi punti.
+\end{cesempiot}
+\begin{enumerate}
+	\item Consideriamo l'equazione del fascio $y-y_1=m(x-x_1)$
+	\item Passaggio per $A\coord{2}{3}$ otteniamo $y-3=m(x-2)$
+	\item Passaggio per $B\coord{2}{5}$ otteniamo $5-3=m(2-3)$
+	\item Semplifico $2=0$
+	\item Impossibile. In questo caso la soluzione è:
+	\item $x=2$
+\end{enumerate}
+\begin{esempiot}{Retta per due punti}{rettaf3}
+	Dati due punti $A\coord{3}{6}$ $B\coord{5}{2}$ trovare la retta che passa per questi punti.
+\end{esempiot}
+\begin{enumerate}
+	\item Consideriamo l'equazione  $\dfrac{y-y_1}{y_2-y_1}=\dfrac{x-x_1}{x_2-x_1}$
+	\item \begin{align*}
+		\intertext{Passaggio per $A\coord{3}{6}$ $B\coord{5}{2}$ }
+	\dfrac{y-4}{2-6}=&\dfrac{x-3}{5-3}\\
+	\dfrac{y-4}{-4}=&\dfrac{x-3}{2}\\
+		y-6=&-4\dfrac{x-3}{2}\\
+		y=&-2(x-3)+6\\
+		y=&-2x+12
+	\end{align*}
+\end{enumerate}
+\section{Intersezioni fra rette}
+\begin{esempiot}{Date due rette trovare il punto di intersezione}{retta16}
+	Data le rette $y=-2x+4$ e $y=x+1$ trovare il loro eventuale punto di intersezione
+\end{esempiot}
+Imposto il sistema 
+\[\begin{cases} 
+	y=-2x+4\\
+	y=+x+1
+\end{cases}\]
+Risolvo il sistema formato dalle due rette in forma esplicita con il metodo del confronto.
+\begin{align*}
+	&\begin{cases} 
+		y=-2x+4\\
+		y=+x+1
+	\end{cases}&&\begin{cases} 
+	x+1=-2x+4\\
+	y=+x+1
+\end{cases}\\
+&\begin{cases} 
+	3x=3\\
+	y=x+1
+\end{cases}&&\begin{cases} 
+x=1\\
+y=x+1
+\end{cases}\\
+&\begin{cases} 
+	x=1\\
+	y=1+1
+\end{cases}&&
+\begin{cases} 
+	x=1\\
+	y=2
+\end{cases}
+\end{align*}
+Le due rette si incontrano in $A\coord{1}{2}$
+\begin{esempiot}{Date due rette trovare il punto di intersezione}{retta17}
+	Data le rette $y=\dfrac{1}{2}x+4$ e $y=-x+1$ trovare la loro eventuale intersezione.
+\end{esempiot}
+Imposto il sistema 
+\[\begin{cases} 
+y=+\dfrac{1}{2}x+4\\
+y=-x+1
+\end{cases}\]
+Risolvo il sistema formato dalle due rette in forma esplicita con il metodo del confronto.
+\begin{align*}
+	&\begin{cases} 
+		y=\dfrac{1}{2}x+4\\
+		y=-x+1
+	\end{cases}&&\begin{cases} 
+	-x+1=\dfrac{1}{2}x+4\\
+	y=-x+1
+\end{cases}\\
+&\begin{cases} 
+	-2x+2=+x+8\\
+	y=-x+1
+\end{cases}&&\begin{cases} 
+-2x-x=+8-2\\
+y=-x+1
+\end{cases}\\
+&\begin{cases} 
+	-3x=+6\\
+	y=-x+1
+\end{cases}&&
+\begin{cases} 
+	x=-2\\
+	y=-x+1
+\end{cases}\\
+&\begin{cases} 
+	x=-2\\
+	y=3
+\end{cases}
+\end{align*}
+Le due rette si incontrano in $A\coord{-2}{3}$
+\begin{cesempiot}{Date due rette trovare il punto di intersezione}{retta18}
+	Data le rette $y=2x+5$ e $y=2x+6$ trovare il loro eventuale punto di intersezione
+\end{cesempiot}
+Le due rette hanno lo stesso coefficiente angolare\index{Coefficiente!angolare} quindi non si incontrano, verifichiamo con il sistema 
+\[\begin{cases} 
+y=2x+5\\
+y=2x+6
+\end{cases}\]
+Risolvo con il metodo del confronto.
+\begin{align*}
+	&\begin{cases} 
+		y=2x+5\\
+		y=2x+6
+	\end{cases}&&\begin{cases} 
+	2x+5=2x+6\\
+	y=2x+6
+\end{cases}\\
+&\begin{cases} 
+	5=6\\
+	y=2x+6
+\end{cases}
+\end{align*}
+Le due rette non si intersecano.
+\begin{esempiot}{Date due rette trovare il punto di intersezione}{retta19}
+	Data le rette $x+3y-4=0$ e $2x+3y-5=0$ trovare il loro eventuale punto di intersezione
+\end{esempiot}
+Imposto il sistema 
+\[\begin{cases} 
+x+3y=4\\
+2x+3y=5
+\end{cases}\]
+Risolvo il sistema formato dalle due rette  con il metodo della sostituzione.
+\begin{align*}
+	&\begin{cases} 
+	x+3y=4\\
+	2x+3y=5
+	\end{cases}&&\begin{cases} 
+x=-3y+4\\
+2x+3y=5
+\end{cases}\\
+&\begin{cases} 
+	x=4-3y\\
+	2(4-3y)+3y=5
+\end{cases}&&\begin{cases} 
+	x=4-3y\\
+	8-6y+3y=5
+\end{cases}\\
+&\begin{cases} 
+	x=4-3y\\
+	-3y=5-8
+\end{cases}&&\begin{cases} 
+x=4-3y\\
+-3y=-3
+\end{cases}\\
+&\begin{cases} 
+	x=4-3y\\
+	y=1
+\end{cases}&&\begin{cases} 
+x=4-3\\
+y=1
+\end{cases}\\
+&\begin{cases} 
+	x=1\\
+	y=1
+\end{cases}\\
+\end{align*}

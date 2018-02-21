@@ -1,0 +1,19 @@
+\documentclass{standalone}
+\usepackage{pgf,tikz}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\begin{document}
+	\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+	\draw[->,color=black] (-4.3,0.) -- (1.86,0.);
+	\foreach \x in {-4.,-3.,-2.,-1.,1.}
+	\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
+	\draw[->,color=black] (0.,-0.78) -- (0.,6.3);
+	\foreach \y in {,1.,2.,3.,4.,5.,6.}
+	\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
+	\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$};
+	\clip(-4.3,-0.78) rectangle (1.86,6.3);
+	\draw [samples=50,rotate around={0.:(-1.5,2.75)},xshift=-1.5cm,yshift=2.75cm,domain=-3.0:3.0)] plot (\x,{(\x)^2/2/0.5});
+	\draw [domain=-4.3:1.86] plot(\x,{(--3.--1.*\x)/1.});
+	\end{tikzpicture}
+\end{document}

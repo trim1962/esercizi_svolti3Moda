@@ -1,0 +1,26 @@
+\documentclass{standalone}
+
+\usepackage{pgf,tikz}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\begin{document}
+	\definecolor{uuuuuu}{rgb}{0.26666666666666666,0.26666666666666666,0.26666666666666666}
+	\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+	\draw[->,color=black] (-4.772021564234721,0.) -- (2.811243162156256,0.);
+	\foreach \x in {-4.,-3.,-2.,-1.,1.,2.}
+	\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
+	\draw[->,color=black] (0.,-2.1695561938113985) -- (0.,6.0099357346545474);
+	\foreach \y in {-2.,-1.,1.,2.,3.,4.,5.,6.}
+	\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
+	\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$};
+	\clip(-4.772021564234721,-2.1695561938113985) rectangle (2.811243162156256,6.0099357346545474);
+	\draw [samples=50,rotate around={0.:(-1.,0.)},xshift=-1.cm,yshift=0.cm,domain=-4.0:4.0)] plot (\x,{(\x)^2/2/0.5});
+	\begin{scriptsize}
+	\draw [fill=uuuuuu] (-1.,0.) circle (1.5pt);
+	\draw[color=uuuuuu] (-1.1946583517849234,-0.2318177870677576) node {$A$};
+	\draw [fill=uuuuuu] (0.,1.) circle (1.5pt);
+	\draw[color=uuuuuu] (0.29590965340249226,1.0351650173415463) node {$B$};
+	\end{scriptsize}
+	\end{tikzpicture}
+\end{document}
