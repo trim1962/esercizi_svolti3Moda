@@ -51,7 +51,7 @@
 %%%lunghezza arrotondamenti%%%%%
 \newcommand{\lungarrotandamento}{4}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\usepackage[grumpy,mark,markifdirty,raisemark=0.95\paperheight]{gitinfo2}
 \usepackage[toc,page]{appendix}
 
 \renewcommand{\appendixtocname}{Appendice}
@@ -108,14 +108,18 @@
 		{\LARGE \textsc{TERZO MODA}}
 		\HRule \\[1.5cm]
 		\vfill
-	\end{center}
-	\begin{center}
+%	\end{center}
+%	\begin{center}
 		\begin{tikzpicture}
 		\renewcommand*{\VertexBallColor}{green!50!black}
 		\GraphInit[vstyle=Art]
 		\grComplete[RA=5]{18}
 		\end{tikzpicture}
 	\end{center}
+	{\centering
+	Release:\gitReln\ (\gitAbbrevHash)\ Autore:\gitAuthorName\ 
+	\gitCommitterDate \\
+}
 \end{titlepage}
 \setcounter{page}{2}
 \input{../Mod_base/copyright}
