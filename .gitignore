@@ -17,3 +17,5 @@ bes.bib.bak
 /eserciziterzo.synctex(busy)
 /solutions/exercise-*.*
 /solutions/exercise-*.*
+*.bbl
+*.blg
