@@ -1,17 +1,17 @@
 \documentclass[a4paper,oneside]{book}
-\input{../Mod_base/base}
-\geometry{top=2cm,bottom=2cm,left=2cm,right=2cm}
-\input{../Mod_base/grafica}
-
-
-\input{../Mod_base/matematica}
-\input{../Mod_base/tabelle}
+\usepackage{base}
+%\geometry{top=2cm,bottom=2cm,left=2cm,right=2cm}
+\usepackage[big]{layaureo}
+\usepackage{stand_class}
+\usepackage{matematica}
+\usepackage{tabelle}
 \DeclareCaptionFormat{grafico}{\textbf{Grafico \thefigure}#2#3}
 \DeclareCaptionFormat{esempio}{\textbf{Esempio \thefigure}#2#3}
 \usepackage{imakeidx}
 \makeindex[options=-s ../Mod_base/oldclaudio.sti]
-\input{../Mod_base/pagina}
-\input{../Mod_base/indice}
+\usepackage{pagina}
+\usepackage{unita_misura}
+\usepackage{indice}
 %\titlecontents{figure}
 %[0em]{}
 %{\thecontentslabel\hspace*{1.5em}}
@@ -28,11 +28,12 @@
 %{\hfill\contentspage}% 
 %[\addvspace{0pt}]% 
 
-\input{../Mod_base/date}
-\input{../Mod_base/loghi}
-\input{../Mod_base/unita_misura}
-\input{../Mod_base/utili}
-\input{../Mod_base/stand_class}
+\usepackage{date}
+\usepackage{copyright}
+\usepackage{CDloghi}
+%\input{../Mod_base/unita_misura}
+\usepackage{utili}
+%\input{../Mod_base/stand_class}
 %per le semplificazioni
 
 \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
@@ -62,7 +63,7 @@
 \usepackage{hyperxmp}
 \usepackage[pdfpagelabels]{hyperref}
 \usepackage[italian]{cleveref}
-\input{../Mod_base/tcolorboxgest}
+%\input{../Mod_base/tcolorboxgest}
 \title{Esercizi svolti terzo moda}
 \author{Claudio Duchi}
 \date{\datetime}
@@ -101,7 +102,7 @@
 \frontmatter
 		\begin{titlepage}
 	\begin{center}
-		\input{../Mod_base/Lgrande}\\[1cm]
+		\Lgrandedue\\[1cm]
 		\textsc{\LARGE Claudio Duchi}\\[1.5cm]
 		\HRule \\[0.4cm]
 		{ \huge \bfseries ESERCIZI SVOLTI DI MATEMATICA}\\[0.4cm]
@@ -122,7 +123,7 @@
 }
 \end{titlepage}
 \setcounter{page}{2}
-\input{../Mod_base/copyright}
+\CDcopyright
 \tableofcontents 
 %\addcontentsline{toc}{chapter}{\listtablename}
 %\listoftables
@@ -145,7 +146,7 @@
 \input{compilaDUE}
 \backmatter
 \begin{appendices}
-	\input{../Mod_base/MezziUsati}
+\CDMezziUsati
 \end{appendices}
 
 \addcontentsline{toc}{chapter}{\indexname}
