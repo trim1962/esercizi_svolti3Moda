@@ -282,19 +282,19 @@ otteniamo
 	\captionof{figure}{Retta perpendicolare a retta data}\label{fig:disegnoretta10}
 \end{center}
 \section{Fascio di rette}
-\begin{esempiot}{Trovare l'equazione del fascio passante per un punto}{retta11}
+\begin{esempiot}{Trovare l'equazione del fascio di centro un punto dato}{retta11}
 	Dato il punto	$A\coord{3}{4}$ trovare l'equazione del fascio di centro $A$
 \end{esempiot}
-Partendo da $y-y_1=m(x-x_1)$ passaggio per 	$A\coord{3}{4}$
+Partendo da $y-y_1=m(x-x_1)$ sostituisco le coordinate del centro  	$A\coord{3}{4}$
 \begin{align*}
 	y-4=&m(x-3)\\
 	y=&m(x-3)+4
 \end{align*}
 L'equazione cercata è $y=m(x-3)+4$
-\begin{esempiot}{Trovare l'equazione del fascio passante per un punto}{retta12}
+\begin{esempiot}{Trovare l'equazione del fascio di centro un punto dato}{retta12}
 	Dato il punto	$A\coord{3}{4}$ trovare l'equazione del fascio di centro $A$
 \end{esempiot}
-Partendo da $y-y_1=m(x-x_1)$ passaggio per 	$A\coord{-1}{-2}$
+Partendo da $y-y_1=m(x-x_1)$ sostituisco le coordinate del centro  	$A\coord{-1}{-2}$
 \begin{align*}
 	y+2=&m(x+1)\\
 	y=&m(x+1)-2
@@ -305,18 +305,18 @@ L'equazione cercata è $y=m(x+1)$
 \end{esempiot}
 \begin{align*}
 	m=&\dfrac{y_2-y_1}{x_2-x_1}\\
-	\intertext{Passaggio per $A\coord{2}{5}$ e $B\coord{3}{7}$}
+	\intertext{Sostituisco le coordinate dei punti $A\coord{2}{5}$ e $B\coord{3}{7}$}
 	m=&\dfrac{7-5}{3-2}\\
 	m=&\dfrac{2}{1}\\
 	m=&2\\
 \end{align*}
-Ilcoefficiente angolare $m=2$
+Il coefficiente angolare è $m=2$
 \begin{cesempiot}{Dati due punti trovare il coefficiente angolare della retta che passa per questi punti}{retta13a}
 	Dati i punti $A\coord{2}{5}$ e $B\coord{2}{7}$ trovare il coefficiente angolare della retta che passa per  $A$ E $B$
 \end{cesempiot}
 \begin{align*}
 	m=&\dfrac{y_2-y_1}{x_2-x_1}\\
-	\intertext{Passaggio per $A\coord{2}{5}$ e $B\coord{2}{7}$}
+	\intertext{Sostituisco  $A\coord{2}{5}$ e $B\coord{2}{7}$}
 	m=&\dfrac{7-5}{2-2}\\
 	m=&\dfrac{2}{0}\\
 \intertext{Impossibile}
@@ -329,7 +329,7 @@ Non esiste il coefficiente angolare.
 Consideriamo l'equazione generica del fascio $y-y_1=m(x-x_1)$, se le due rette sono parallele $m=3$ quindi
 \begin{align*}
 	y-y_1=&3(x-x_1)\\
-	\intertext{Passaggio per $A\coord{2}{3}$}
+	\intertext{Coordinate del centro $A\coord{2}{3}$}
 	y-3=&3(x-2)\\
 	y=&3x-6+3\\
 	y=&3x-3\\
@@ -339,10 +339,11 @@ Otteniamo 	$y=3x-3$ lo stesso risultato dell'\cref{exa:retta7}
 \begin{esempiot}{Dato un punto e una retta perpendicolare}{retta15}
 	Data la retta $y=2x+2$ Trovare la retta perpendicolare alla retta data che  passa per il punto	$A\coord{2}{4}$
 \end{esempiot}
-Consideriamo l'equazione generica del fascio $y-y_1=m(x-x_1)$, se le due rette sono parallele $m_1\cdot m_2=-1$ quindi $2m_2=-1$ $m_2=-\dfrac{1}{2}$
+Se le due rette sono perpendicolari allora $m_1\cdot m_2=-1$ quindi $2m_2=-1$ $m_2=-\dfrac{1}{2}$
+Consideriamo l'equazione generica del fascio $y-y_1=m(x-x_1)$, 
 \begin{align*}
 	y-y_1=&-\dfrac{1}{2}(x-x_1)\\
-	\intertext{Passaggio per $A\coord{2}{4}$}
+	\intertext{Sostituisco le coordinate del centro $A\coord{2}{4}$}
 	y-4=&-\dfrac{1}{2}(x-2)\\
 	y=&-\dfrac{1}{2}x+1+4\\
 	y=&-\dfrac{1}{2}x+5\\
@@ -354,7 +355,7 @@ Dati due punti $A\coord{-5}{2}$ $B\coord{3}{6}$ trovare la retta che passa per q
 \end{esempiot}
 \begin{enumerate}
 	\item Consideriamo l'equazione del fascio $y-y_1=m(x-x_1)$
-	\item Passaggio per $A\coord{-5}{2}$ otteniamo $y-2=m(x+5)$
+	\item Sostituisco le coordinate del centro $A\coord{-5}{2}$ otteniamo $y-2=m(x+5)$
 	\item Trovo il coefficiente angolare come con l'\cref{exa:retta13}
 	\item $m=\dfrac{1}{2}$
 	\item \begin{align*}
@@ -368,7 +369,7 @@ Dati due punti $A\coord{-5}{2}$ $B\coord{3}{6}$ trovare la retta che passa per q
 \end{esempiot}
 \begin{enumerate}
 	\item Consideriamo l'equazione del fascio $y-y_1=m(x-x_1)$
-	\item Passaggio per $A\coord{3}{6}$ otteniamo $y-6=m(x-3)$
+	\item Prendiamo  $A\coord{3}{6}$ come centro del fascio e otteniamo $y-6=m(x-3)$
 	\item Passaggio per $B\coord{5}{2}$ otteniamo $2-6=m(5-3)$
 	\item Semplifico $-4=m2$
 	\item $m=-2$
@@ -383,7 +384,7 @@ Dati due punti $A\coord{-5}{2}$ $B\coord{3}{6}$ trovare la retta che passa per q
 \end{cesempiot}
 \begin{enumerate}
 	\item Consideriamo l'equazione del fascio $y-y_1=m(x-x_1)$
-	\item Passaggio per $A\coord{2}{3}$ otteniamo $y-3=m(x-2)$
+	\item Poniamo  $A\coord{2}{3}$ come centro del fascio e otteniamo $y-3=m(x-2)$
 	\item Passaggio per $B\coord{2}{5}$ otteniamo $5-3=m(2-3)$
 	\item Semplifico $2=0$
 	\item Impossibile. In questo caso la soluzione è:
